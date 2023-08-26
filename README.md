@@ -11,12 +11,6 @@ Le Convertisseur Dong vers Euro est un outil simple qui vous permet de convertir
 - Possibilité d'ajuster manuellement le taux de conversion.
 - Aux couleurs du VN
 
-## Capture d'écran
-
-![Capture d'écran](img/screenShot.png)
-
-*Capture d'écran du convertisseur en action.*
-
 
 **Note :** Les taux de change varient avec le temps. Assurez-vous de garder votre taux de conversion à jour pour obtenir des résultats précis.
 
