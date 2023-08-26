@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/2b58de1911.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Dong ⇋ Euro</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1><i class="fas fa-money-bill"></i>
+      Dong ⇋ Euro <i class="fas fa-euro-sign"></i>
+    </h1>
+    <label for="conversionRate">Taux de conversion VND vers 1 Euro</label>
+    <input type="number" id="conversionRate" placeholder="Entrez le taux de conversion" value="25912.06">
+  </header>
+  <div class="converter">
+    <label for="vndAmount">Montant en VND:</label>
+    <input type="number" id="vndAmount" placeholder="Entrez le montant en VND">
+    <p class="converter__result" id="result"></p>
+  </div>
+  <div class="converter">
+    <label for="rateSelect">Sélection d'un montant en Dong</label>
+    <select id="rateSelect">
+      <option value="25000">25 000 Đ</option>
+      <option value="50000">50 000 Đ</option>
+      <option value="75000 ">75 000 Đ</option>
+      <option value="100000">100 000 Đ</option>
+      <option value="125000">125 000 Đ</option>
+      <option value="150000">150 000 Đ</option>
+      <option value="175000">175 000 Đ</option>
+      <option value="200000">200 000 Đ</option>
+      <option value="225000">225 000 Đ</option>
+      <option value="250000">250 000 Đ</option>
+      <option value="275000">275 000 Đ</option>
+      <option value="300000">300 000 Đ</option>
+      <option value="325000">325 000 Đ</option>
+      <option value="350000">350 000 Đ</option>
+      <option value="375000">375 000 Đ</option>
+      <option value="400000">400 000 Đ</option>
+      <option value="425000">425 000 Đ</option>
+      <option value="450000">450 000 Đ</option>
+      <option value="475000">475 000 Đ</option>
+      <option value="500000">500 000 Đ</option>
+      <option value="1000000">1 000 000 Đ</option>
+    </select>
+    <p class="converter__result" id="selectedRateDisplay">Résultat de la conversion:</p>
+  </div>
+  <img src="img/vnFlag.png" alt="" class="converter__img">
+  <script src="script.js"></script>
+</body>
+
+</html>
