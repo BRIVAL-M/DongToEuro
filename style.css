@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 5.1vh;
+  gap: 4.1vh;
   min-height: 100vh;
   background: #e14141;
   flex-direction: column;
@@ -101,5 +101,14 @@ select {
 @media screen and (max-width: 305px) {
   .header i {
     display: none;
+  }
+}
+@media screen and (max-width: 399px) {
+  body {
+    gap: 7vh;
+  }
+  
+  .header h1 {
+    margin-top: 5px;
   }
 }

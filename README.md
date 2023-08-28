@@ -16,4 +16,5 @@ Le Convertisseur Dong vers Euro est un outil simple qui vous permet de convertir
 
 **Avertissement :** Ce convertisseur est à des fins éducatives uniquement et ne garantit pas l'exactitude des taux de change utilisés. Les taux de change réels peuvent varier. Utilisez les résultats du convertisseur avec discernement et ne vous fiez pas uniquement à eux pour prendre des décisions financières.
 
-Merci d'utiliser le Convertisseur Dong vers Euro ! 
+ 
+[Merci d'utiliser le Convertisseur Dong vers Euro !](https://brival-m.github.io/DongToEuro/)
