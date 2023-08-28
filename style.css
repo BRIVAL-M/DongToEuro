@@ -41,6 +41,29 @@ body {
   color: #e14141;
 }
 
+.header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #ffff00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: .3s;
+}
+
+.header button:hover {
+  box-shadow: none
+}
+
 .converter {
   text-align: center;
   padding: 20px;
@@ -72,6 +95,10 @@ label {
   margin-right: 5px;
 }
 
+label span {
+  color: #ffff00;
+}
+
 input,
 select {
   padding: 8px;
@@ -95,7 +122,10 @@ select {
 .converter__img {
   max-width: 300px;
   width: 70%;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  /* Ajoutez cette ligne pour l'ombre */
 }
+
 
 
 @media screen and (max-width: 305px) {
@@ -103,11 +133,12 @@ select {
     display: none;
   }
 }
+
 @media screen and (max-width: 399px) {
   body {
     gap: 7vh;
   }
-  
+
   .header h1 {
     margin-top: 5px;
   }

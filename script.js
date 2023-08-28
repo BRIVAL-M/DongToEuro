@@ -47,6 +47,50 @@ document.addEventListener('DOMContentLoaded', function () {
   updateConversion();
 });
 
+//// Sauvegarde du taux de change + date dans le LS (modifié par le user)
+
+// Récupération de l'élément input et de la span pour la date
+const conversionRateInput = document.getElementById("conversionRate");
+const dateSpan = document.getElementById("date");
+
+// Écouteur d'événement pour le changement de la valeur de l'input
+conversionRateInput.addEventListener("change", function () {
+  // Mise à jour du taux de conversion dans le localStorage
+  localStorage.setItem("conversionRate", conversionRateInput.value);
+
+  // Mise à jour de la date dans le localStorage et dans la span
+  const currentDate = new Date().toLocaleDateString("fr-FR");
+  localStorage.setItem("conversionDate", currentDate);
+  dateSpan.textContent = currentDate;
+
+  // Chargement du taux de conversion et de la date depuis le localStorage
+  const savedConversionRate = localStorage.getItem("conversionRate");
+  const savedConversionDate = localStorage.getItem("conversionDate");
+  if (savedConversionRate !== null) {
+    conversionRateInput.value = savedConversionRate;
+  }
+  if (savedConversionDate !== null) {
+    dateSpan.textContent = savedConversionDate;
+  }
+});
+
+///// Vider le LS 
+
+// Récupération de l'élément bouton pour la suppression
+const removeButton = document.getElementById("removeConversion");
+
+// Fonction pour vider le localStorage et actualiser la page
+function clearLocalStorageAndReload() {
+  localStorage.clear(); // Vide le localStorage
+  location.reload(); // Actualise la page
+}
+
+// Écouteur d'événement pour le clic sur le bouton de suppression
+removeButton.addEventListener("click", clearLocalStorageAndReload);
+
+
+
+
 
 
 
