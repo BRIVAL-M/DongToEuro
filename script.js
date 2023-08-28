@@ -54,7 +54,7 @@ const conversionRateInput = document.getElementById("conversionRate");
 const dateSpan = document.getElementById("date");
 
 // Écouteur d'événement pour le changement de la valeur de l'input
-conversionRateInput.addEventListener("change", function () {
+conversionRateInput.addEventListener("change", function() {
   // Mise à jour du taux de conversion dans le localStorage
   localStorage.setItem("conversionRate", conversionRateInput.value);
 
@@ -62,17 +62,18 @@ conversionRateInput.addEventListener("change", function () {
   const currentDate = new Date().toLocaleDateString("fr-FR");
   localStorage.setItem("conversionDate", currentDate);
   dateSpan.textContent = currentDate;
-
-  // Chargement du taux de conversion et de la date depuis le localStorage
-  const savedConversionRate = localStorage.getItem("conversionRate");
-  const savedConversionDate = localStorage.getItem("conversionDate");
-  if (savedConversionRate !== null) {
-    conversionRateInput.value = savedConversionRate;
-  }
-  if (savedConversionDate !== null) {
-    dateSpan.textContent = savedConversionDate;
-  }
 });
+
+// Chargement du taux de conversion et de la date depuis le localStorage
+const savedConversionRate = localStorage.getItem("conversionRate");
+const savedConversionDate = localStorage.getItem("conversionDate");
+if (savedConversionRate !== null) {
+  conversionRateInput.value = savedConversionRate;
+}
+if (savedConversionDate !== null) {
+  dateSpan.textContent = savedConversionDate;
+}
+
 
 ///// Vider le LS 
 
